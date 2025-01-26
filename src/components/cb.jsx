@@ -59,7 +59,7 @@ export default function ChatBot() {
         setIsLoading(true);
 
         try {
-            const response = await fetch(`http://localhost:3000/generate-sql?user_query=${encodeURIComponent(inputMessage)}`);
+            const response = await fetch(`https://brands.cx360.in/generate-sql?user_query=${encodeURIComponent(inputMessage)}`);
             const data = await response.json();
             
             setMessages(prev => [
