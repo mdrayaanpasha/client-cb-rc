@@ -8,7 +8,7 @@ const Nav = ({ darkMode, toggleDarkMode }) => (
     <div className="flex items-center gap-2">
               <FiTrendingUp className="w-6 h-6 text-blue-500" />
         
-      <h1 className="text-xl font-bold">CXpert</h1>
+      <h1 className="text-xl font-bold" onClick={e=>window.location.href="./"}>CXpert</h1>
     </div>
     <button
       onClick={toggleDarkMode}

@@ -9,6 +9,7 @@ const Nav = ({ darkMode, toggleDarkMode }) => (
       <h1 className="text-xl font-bold">CX360</h1>
     </div>
     <button
+    
       onClick={toggleDarkMode}
       className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
     >
@@ -37,6 +38,7 @@ export default function Home() {
                     Empowering investors with real-time brand performance analytics, reviews, and ratings to make smarter decisions.
                 </p>
                 <button
+                onClick={e=>{window.location.href='/chat'}}
                     className={`flex items-center gap-2 px-6 py-3 rounded-xl text-lg font-semibold transition-all ${
                         isDarkMode
                             ? 'bg-blue-600 text-white hover:bg-blue-700'
